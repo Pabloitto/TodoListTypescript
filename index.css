@@ -1,0 +1,40 @@
+body{
+    background-color: #04364D;
+	margin-top: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div.container{
+    background-color: #fff;
+}
+
+.todo-form{
+    margin-top: 20px;
+}
+
+li.done div label span{
+    text-decoration: line-through !important;
+    color: gray;
+}
+
+button.todo-btn{
+    margin-left: 2px;
+}
+
+.removed{
+    opacity:0;
+    transition:opacity 0.5s linear;
+}
+
+div.container{
+    width: 960px !important;
+}
+
+div.todo-content{
+    margin-bottom: 10px;
+}
+
+div.todolist{
+    height: 400px;
+    overflow-y: auto;
+}

@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Todo typescript</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-only-css/dist/bootstrap.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="node_modules/systemjs/dist/system.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <img src="/content/img/header1.png" alt="">
+        </div>
+        <div class="row todo-content">
+            <div class="col-md-6 col-md-offset-3">
+                <form id="todo-form" class="form-inline todo-form">
+                    <div class="form-group">
+                        <label for="exampleInputName2">Todo</label>
+                        <input required id="input-todo" type="text" class="form-control add-todo" placeholder="Add todo">
+                    </div>
+                    <button type="submit" id="add" class="btn btn-info">Add</button>
+                </form>
+                <hr>
+                <div class="todolist">
+                    <ul id="todo-list" class="list-group">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <img src="/content/img/footer.png" alt="">
+        </div>
+    </div>
+    <script>
+        SystemJS.config({
+            baseURL: "/",
+            packages: {
+                "/": {
+                    defaultJSExtensions: true
+                }
+            }
+        });
+        SystemJS.import("index.js");
+    </script>
+</body>
+
+</html>
